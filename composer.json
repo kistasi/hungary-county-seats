@@ -3,8 +3,8 @@
     "description": "County seats in Hungary.",
     "type": "library",
     "require-dev": {
-        "phpunit/php-timer": "^2.1",
-        "symfony/var-dumper": "^5.2"
+        "symfony/var-dumper": "^5.2",
+        "phpunit/phpunit": "^8.5"
     },
     "license": "MIT",
     "authors": [
@@ -13,5 +13,10 @@
             "email": "marton.tasnadi@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CountySeats\\": "src/"
+        }
+    }
 }
