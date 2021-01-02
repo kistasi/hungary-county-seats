@@ -1,0 +1,17 @@
+{
+    "name": "kistasi/hungary-county-seats",
+    "description": "County seats in Hungary.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/php-timer": "^2.1",
+        "symfony/var-dumper": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marton Tasnadi",
+            "email": "marton.tasnadi@gmail.com"
+        }
+    ],
+    "require": {}
+}
