@@ -4,7 +4,7 @@ namespace CountySeats;
 
 class CountySeats
 {
-    const MAP = [
+    const COUNTY_CITY_MAP = [
         'Bács-Kiskun' => 'Kecskemét',
 		'Baranya' => 'Pécs',
 		'Békés' => 'Békéscsaba',
@@ -28,23 +28,23 @@ class CountySeats
 
     public static function all(): array
     {
-        return static::MAP;
+        return static::COUNTY_CITY_MAP;
     }
 
     public static function counties(): array
     {
-        return array_keys(static::MAP);
+        return array_keys(static::COUNTY_CITY_MAP);
     }
 
     public static function cities(): array
     {
-        return array_values(static::MAP);
+        return array_values(static::COUNTY_CITY_MAP);
     }
 
     public static function getCityByCounty(string $county): ?string
     {
-        if (array_key_exists($county, static::MAP)) {
-            return static::MAP[$county];
+        if (array_key_exists($county, static::COUNTY_CITY_MAP)) {
+            return static::COUNTY_CITY_MAP[$county];
         }
 
         return null;
@@ -52,9 +52,8 @@ class CountySeats
 
     public static function getCountyByCity(string $county): ?string
     {
-        $map = array_flip(static::MAP);
-        if (array_key_exists($county, $map)) {
-            return array_flip(static::MAP)[$county];
+        if (array_key_exists($county, array_flip(static::COUNTY_CITY_MAP))) {
+            return array_flip(static::COUNTY_CITY_MAP)[$county];
         }
 
         return null;
