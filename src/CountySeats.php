@@ -1,6 +1,6 @@
 <?php
 
-namespace CountySeats;
+namespace kistasi\CountySeats;
 
 class CountySeats
 {

@@ -1,5 +1,6 @@
 <?php
 
+use kistasi\CountySeats;
 use PHPUnit\Framework\TestCase;
 
 class CountySeatsTest extends TestCase
